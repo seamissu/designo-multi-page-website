@@ -7,7 +7,7 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: 'Designo multi-page website',
+  title: 'Designo Agency Website',
 };
 
 export default function RootLayout({ children }) {

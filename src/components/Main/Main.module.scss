@@ -1,3 +1,185 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   grid-area: main;
+  position: relative;
+
+  padding-left: 165px;
+  padding-right: 165px;
+
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.herowrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  color: var(--white);
+  background-color: var(--peach);
+
+  background-image: url('/home/desktop/bg-pattern-hero-home.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+
+  height: 640px;
+  border-radius: 15px;
+
+  padding-left: 95px;
+  padding-top: 145px;
+}
+
+.herowrapper h1 {
+  font-size: var(--font-size-heading-1);
+  line-height: var(--line-height-heading-1);
+  font-weight: 500;
+  max-width: 540px;
+}
+
+.herowrapper p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: 400;
+  max-width: 445px;
+}
+
+.whitebutton {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  width: 152px;
+  height: 56px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--light-peach);
+    color: var(--white);
+  }
+}
+
+.sameashero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 640px;
+
+  width: 50%;
+
+  background-image: url('/home/desktop/image-hero-phone.png');
+  background-repeat: no-repeat;
+  background-position: bottom -240px right -80px;
+}
+
+.designwrapper {
+  display: grid;
+  grid-template-areas:
+    'web app'
+    'web graphic';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  height: 640px;
+
+  gap: 24px 30px;
+}
+
+.designwrapper a {
+  text-decoration: none;
+  display: block;
+  background: transparent;
+}
+
+.weblink {
+  grid-area: web;
+  position: relative;
+}
+
+.applink {
+  grid-area: app;
+}
+
+.graphiclink {
+  grid-area: graphic;
+}
+
+.webdesign {
+  width: 100%;
+  height: 640px;
+  border-radius: 15px;
+
+  background-image: url('/home/desktop/image-web-design-large.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  filter: brightness(50%);
+}
+
+.floatingwords {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 640px;
+  color: var(--white);
+  background-color: transparent;
+  border-radius: 15px;
+
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 24px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--peach-hover);
+  }
+
+  @media (max-width: $mobile-and-below) {
+    gap: 12px;
+  }
+}
+
+.floatingwords h2 {
+  font-size: var(--font-size-heading-2);
+  line-height: var(--line-height-heading-2);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+  }
+}
+
+.floatingwords p {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.floatingwords div {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+
+  @media (max-width: $mobile-and-below) {
+    gap: 16px;
+  }
+}
+
+.appdesign {
+}
+
+.graphicdesign {
 }
