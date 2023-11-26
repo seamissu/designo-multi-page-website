@@ -1,0 +1,76 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+$tablet-background-image: 768px;
+$mobile-background-image: 375px;
+
+// CSS Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  // line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+// Global baseline styles
+:root {
+  // Primary Colors
+  --peach: hsl(11deg 73% 66%);
+  --black: hsl(270deg 3% 11%);
+  --white: hsl(0deg 0% 100%);
+
+  //Secondary Colors
+  --light-peach: hsl(11deg 100% 80%);
+  --dark-gray: hsl(264deg 5% 20%);
+  --light-gray: hsl(210deg 17% 95%);
+
+  //font sizes
+  --font-size-heading-1: 48px;
+  --font-size-heading-2: 40px;
+  --font-size-heading-3: 20px;
+  --font-size-body: 16px;
+
+  //line heights
+  --line-height-heading-1: 48px;
+  --line-height-heading-2: 48px;
+  --line-height-heading-3: 26px;
+  --line-height-body: 26px;
+}
