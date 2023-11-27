@@ -71,6 +71,30 @@ function Main() {
           className={styles.graphictablet}
           linkURL={'/'}
         />
+
+        <SuperLink
+          type={`Web`}
+          height={250}
+          bgImageUrl={'/home/mobile/image-web-design.jpg'}
+          className={styles.webmobile}
+          linkURL={'/'}
+        />
+
+        <SuperLink
+          type={`App`}
+          height={250}
+          bgImageUrl={'/home/mobile/image-app-design.jpg'}
+          className={styles.appmobile}
+          linkURL={'/'}
+        />
+
+        <SuperLink
+          type={`Graphic`}
+          height={250}
+          bgImageUrl={'/home/mobile/image-graphic-design.jpg'}
+          className={styles.graphicmobile}
+          linkURL={'/'}
+        />
       </section>
 
       <section className={styles.valuewrapper}>

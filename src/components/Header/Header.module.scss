@@ -16,6 +16,11 @@ $mobile-and-below: 550px;
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .navwrapper {
@@ -24,6 +29,10 @@ $mobile-and-below: 550px;
   align-items: baseline;
 
   gap: 42px;
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
 }
 
 .navwrapper a {
@@ -40,5 +49,16 @@ $mobile-and-below: 550px;
   &:hover,
   &:focus {
     border-bottom: 1px solid var(--dark-gray);
+  }
+}
+
+.button {
+  display: none;
+  border: none;
+  background: none;
+  color: inherit;
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
   }
 }

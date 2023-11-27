@@ -42,6 +42,16 @@ $mobile-and-below: 550px;
     padding-left: 58px;
     padding-right: 58px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    top: -190px;
+
+    width: calc(100% - 24px * 2);
+    height: 380px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .wrapper > div {
@@ -64,6 +74,12 @@ $mobile-and-below: 550px;
     max-width: 335px;
     text-align: center;
   }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 279px;
+  }
 }
 
 .wrapper p {
@@ -74,6 +90,12 @@ $mobile-and-below: 550px;
 
   @media (max-width: $tablet-and-below) {
     text-align: center;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 279px;
   }
 }
 

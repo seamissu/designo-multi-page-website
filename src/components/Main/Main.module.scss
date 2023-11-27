@@ -31,6 +31,12 @@ $mobile-and-below: 550px;
 
     gap: 120px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 310px;
+  }
 }
 
 .herowrapper {
@@ -65,6 +71,20 @@ $mobile-and-below: 550px;
 
     background-position: right, bottom -350px right 50%;
   }
+
+  @media (max-width: $mobile-and-below) {
+    border-radius: 0px;
+
+    margin-left: -24px;
+    margin-right: -24px;
+
+    padding-top: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 24px;
+
+    background-position: right, bottom -373px right 50%;
+  }
 }
 
 .herowrapper h1 {
@@ -76,6 +96,12 @@ $mobile-and-below: 550px;
   @media (max-width: $tablet-and-below) {
     text-align: center;
   }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 327px;
+  }
 }
 
 .herowrapper p {
@@ -86,6 +112,12 @@ $mobile-and-below: 550px;
 
   @media (max-width: $tablet-and-below) {
     text-align: center;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 327px;
   }
 }
 
@@ -118,6 +150,10 @@ $mobile-and-below: 550px;
 
     height: 650px;
     gap: 25px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    height: 800px;
   }
 }
 
@@ -152,6 +188,10 @@ $mobile-and-below: 550px;
     display: block;
     grid-area: web;
   }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
 }
 
 .apptablet {
@@ -161,12 +201,47 @@ $mobile-and-below: 550px;
     display: block;
     grid-area: app;
   }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
 }
 
 .graphictablet {
   display: none;
 
   @media (max-width: $tablet-and-below) {
+    display: block;
+    grid-area: graphic;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
+
+.webmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+    grid-area: web;
+  }
+}
+
+.appmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+    grid-area: app;
+  }
+}
+
+.graphicmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
     display: block;
     grid-area: graphic;
   }
@@ -180,6 +255,10 @@ $mobile-and-below: 550px;
   @media (max-width: $tablet-and-below) {
     flex-direction: column;
     gap: 32px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    gap: 80px;
   }
 }
 
@@ -205,6 +284,11 @@ $mobile-and-below: 550px;
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (max-width: $mobile-and-below) {
+    flex-direction: column;
+    justify-content: revert;
+  }
 }
 
 .articlewrapper > div:first-of-type {
@@ -229,6 +313,10 @@ $mobile-and-below: 550px;
     text-align: left;
     margin-bottom: 16px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    text-align: center;
+  }
 }
 
 .articlewrapper > div:last-of-type p {
@@ -240,5 +328,10 @@ $mobile-and-below: 550px;
   @media (max-width: $tablet-and-below) {
     text-align: left;
     max-width: 440px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    text-align: center;
+    max-width: revert;
   }
 }

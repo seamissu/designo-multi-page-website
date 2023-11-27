@@ -4,6 +4,9 @@ import styles from './Header.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import HamburgerIcon from '../HamburgerIcon';
+import CloseIcon from '../CloseIcon';
+
 function Header() {
   return (
     <header className={styles.wrapper}>
@@ -18,6 +21,9 @@ function Header() {
         <Link href="/">Locations</Link>
         <Link href="/">Contact</Link>
       </nav>
+      <button className={styles.button}>
+        <HamburgerIcon />
+      </button>
     </header>
   );
 }

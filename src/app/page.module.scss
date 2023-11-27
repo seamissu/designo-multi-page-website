@@ -7,6 +7,8 @@ $mobile-background-image: 375px;
 
 .wrapper {
   min-height: 100%;
+  overflow: hidden;
+
   display: grid;
   grid-template-areas:
     'header'
@@ -14,6 +16,14 @@ $mobile-background-image: 375px;
     'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 155px 1fr 393px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-rows: 155px 1fr 423px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    grid-template-rows: 96px 1fr 815px;
+  }
 
   & > header {
     border: 2px solid red;

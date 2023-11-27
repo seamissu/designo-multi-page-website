@@ -30,15 +30,20 @@ function Footer() {
       </div>
 
       <div className={styles.gridwrapper}>
+        <div className={styles.mobilelinkwrapper}>
+          <Link href="/">Our Company</Link>
+          <Link href="/">Locations</Link>
+          <Link href="/">Contact</Link>
+        </div>
         <div>
           <p>Designo Central Office</p>
-          <p>3886 Wellington Street</p>
-          <p>Toronto, Ontario M9C 3J5</p>
+          <p className={styles.regular}>3886 Wellington Street</p>
+          <p className={styles.regular}>Toronto, Ontario M9C 3J5</p>
         </div>
         <div>
           <p>{`Contact Us (Central Office)`}</p>
-          <p>P : +1 253-863-8967</p>
-          <p>M : contact@designo.co</p>
+          <p className={styles.regular}>P : +1 253-863-8967</p>
+          <p className={styles.regular}>M : contact@designo.co</p>
         </div>
         <div className={styles.iconwrapper}>
           <FacebookIcon />
