@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './Main.module.scss';
 
-import Link from 'next/link';
 import Button from '../Button';
-import ArrowIcon from '../ArrowIcon';
+import SuperLink from '../SuperLink';
+
+import PassionateIcon from '../PassionateIcon';
+import ResourcefulIcon from '../ResourcefulIcon';
+import FriendlyIcon from '../FriendlyIcon';
 
 function Main() {
   return (
@@ -23,26 +26,75 @@ function Main() {
       </section>
 
       <section className={styles.designwrapper}>
-        <Link href="/" className={styles.weblink}>
-          <div className={styles.webdesign}></div>
-          <div className={styles.floatingwords}>
-            <h2>Web Design</h2>
-            <div>
-              <p>View Projects</p>
-              <ArrowIcon />
-            </div>
-          </div>
-        </Link>
+        <SuperLink
+          type={`Web`}
+          height={640}
+          bgImageUrl={'/home/desktop/image-web-design-large.jpg'}
+          className={styles.weblink}
+          linkURL={'/'}
+        ></SuperLink>
 
-        <Link href="/" className={styles.applink}>
-          <div className={styles.appdesign}></div>
-        </Link>
-        <Link href="/" className={styles.graphiclink}>
-          <div className={styles.graphicdesign}></div>
-        </Link>
+        <SuperLink
+          type={`App`}
+          height={308}
+          bgImageUrl={'/home/desktop/image-app-design.jpg'}
+          className={styles.applink}
+          linkURL={'/'}
+        ></SuperLink>
+
+        <SuperLink
+          type={`Graphic`}
+          height={308}
+          bgImageUrl={'/home/desktop/image-graphic-design.jpg'}
+          className={styles.graphiclink}
+          linkURL={'/'}
+        ></SuperLink>
       </section>
 
-      <section></section>
+      <section className={styles.valuewrapper}>
+        <article className={styles.articlewrapper}>
+          <div>
+            <PassionateIcon />
+          </div>
+          <div>
+            <h3>Passionate</h3>
+            <p>
+              Each project starts with an in-depth brand research to
+              ensure we only create products that serve a purpose. We
+              merge art, design, and technology into exciting new
+              solutions.
+            </p>
+          </div>
+        </article>
+        <article className={styles.articlewrapper}>
+          <div className={styles.iconwrapper}>
+            <ResourcefulIcon />
+          </div>
+          <div className={styles.introwrapper}>
+            <h3>Resourceful</h3>
+            <p>
+              Everything that we do has a strategic purpose. We use an
+              agile approach in all of our projects and value customer
+              collaboration. It guarantees superior results that
+              fulfill our clients’ needs.
+            </p>
+          </div>
+        </article>
+        <article className={styles.articlewrapper}>
+          <div className={styles.iconwrapper}>
+            <FriendlyIcon />
+          </div>
+          <div className={styles.introwrapper}>
+            <h3>Friendly</h3>
+            <p>
+              We are a group of enthusiastic folks who know how to put
+              people first. Our success depends on our customers, and
+              we strive to give them the best experience a company can
+              provide.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
   );
 }
