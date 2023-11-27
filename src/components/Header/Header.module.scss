@@ -1,3 +1,7 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   grid-area: header;
 
@@ -7,6 +11,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .navwrapper {
@@ -25,4 +34,11 @@
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
+  border-bottom: 1px solid var(--white);
+
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid var(--dark-gray);
+  }
 }

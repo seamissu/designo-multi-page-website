@@ -1,3 +1,7 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   position: relative;
   grid-area: footer;
@@ -6,11 +10,18 @@
   padding-top: 144px;
   padding-left: 165px;
   padding-right: 165px;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 165px;
+  }
 }
 
 .logoandlink {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding-bottom: 40px;
   border-bottom: 1px solid var(--white);
@@ -20,6 +31,7 @@
   display: flex;
   justify-content: space-between;
   gap: 42px;
+  justify-items: baseline;
 }
 
 .linkwrapper a {
@@ -30,6 +42,13 @@
   line-height: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  border-bottom: 1px solid var(--black);
+
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid var(--white);
+  }
 }
 
 .gridwrapper {

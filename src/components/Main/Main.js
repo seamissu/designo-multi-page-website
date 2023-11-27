@@ -21,8 +21,6 @@ function Main() {
           brand experiences. Find out more about our services.
         </p>
         <Button className={styles.whitebutton}>Learn more</Button>
-
-        <div className={styles.sameashero}></div>
       </section>
 
       <section className={styles.designwrapper}>
@@ -32,7 +30,7 @@ function Main() {
           bgImageUrl={'/home/desktop/image-web-design-large.jpg'}
           className={styles.weblink}
           linkURL={'/'}
-        ></SuperLink>
+        />
 
         <SuperLink
           type={`App`}
@@ -40,7 +38,7 @@ function Main() {
           bgImageUrl={'/home/desktop/image-app-design.jpg'}
           className={styles.applink}
           linkURL={'/'}
-        ></SuperLink>
+        />
 
         <SuperLink
           type={`Graphic`}
@@ -48,7 +46,31 @@ function Main() {
           bgImageUrl={'/home/desktop/image-graphic-design.jpg'}
           className={styles.graphiclink}
           linkURL={'/'}
-        ></SuperLink>
+        />
+
+        <SuperLink
+          type={`Web`}
+          height={200}
+          bgImageUrl={'/home/tablet/image-web-design.jpg'}
+          className={styles.webtablet}
+          linkURL={'/'}
+        />
+
+        <SuperLink
+          type={`App`}
+          height={200}
+          bgImageUrl={'/home/tablet/image-app-design.jpg'}
+          className={styles.apptablet}
+          linkURL={'/'}
+        />
+
+        <SuperLink
+          type={`Graphic`}
+          height={200}
+          bgImageUrl={'/home/tablet/image-graphic-design.jpg'}
+          className={styles.graphictablet}
+          linkURL={'/'}
+        />
       </section>
 
       <section className={styles.valuewrapper}>
