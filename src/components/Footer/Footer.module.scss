@@ -1,3 +1,67 @@
 .wrapper {
+  position: relative;
   grid-area: footer;
+  background-color: var(--black);
+
+  padding-top: 144px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+.logoandlink {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--white);
+}
+
+.linkwrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.linkwrapper a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.gridwrapper {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  color: var(--white);
+
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: 700;
+
+  padding-top: 30px;
+}
+
+.gridwrapper p {
+  opacity: 0.5;
+}
+
+.gridwrapper > div:first-of-type > p:not(:first-of-type) {
+  font-weight: 400;
+}
+
+.iconwrapper {
+  justify-self: end;
+  align-self: end;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }

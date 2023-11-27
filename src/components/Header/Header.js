@@ -11,7 +11,7 @@ function Header() {
         src="/shared/desktop/logo-dark.png"
         alt="website logo"
         width={196}
-        height={24}
+        height={27}
       />
       <nav className={styles.navwrapper}>
         <Link href="/">Our Company</Link>

@@ -10,11 +10,15 @@ $mobile-and-below: 550px;
   padding-right: 165px;
   padding-bottom: 380px;
 
-  background-color: var(--white);
-
   display: flex;
   flex-direction: column;
   gap: 160px;
+
+  background-color: var(--white);
+  background-image: url('/shared/desktop/bg-pattern-leaf-upper.svg'),
+    url('/shared/desktop/bg-pattern-leaf-lower.svg');
+  background-repeat: no-repeat;
+  background-position: top 320px left 0px, bottom 74px right 0px;
 }
 
 .herowrapper {
@@ -57,12 +61,6 @@ $mobile-and-below: 550px;
   color: var(--dark-gray);
   width: 152px;
   height: 56px;
-
-  &:hover,
-  &:focus {
-    background-color: var(--light-peach);
-    color: var(--white);
-  }
 }
 
 .sameashero {
