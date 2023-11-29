@@ -15,10 +15,9 @@ $mobile-and-below: 550px;
   gap: 160px;
 
   background-color: var(--white);
-  background-image: url('/shared/desktop/bg-pattern-leaf-upper.svg'),
-    url('/shared/desktop/bg-pattern-leaf-lower.svg');
+  background-image: url('/shared/desktop/bg-pattern-leaf-upper.svg');
   background-repeat: no-repeat;
-  background-position: top 320px left 0px, bottom 74px right 0px;
+  background-position: top 126px left 0px;
 
   @media (max-width: $tablet-and-below) {
     background-image: revert;
@@ -39,4 +38,11 @@ $mobile-and-below: 550px;
 
     gap: 96px;
   }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 32px 30px;
 }
