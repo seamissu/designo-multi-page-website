@@ -1,0 +1,33 @@
+.wrapper {
+  height: 252px;
+  width: 100%;
+
+  background-color: var(--peach);
+  border-radius: 15px;
+
+  display: grid;
+  place-content: center;
+  gap: 24px;
+
+  color: var(--white);
+
+  background-image: url('/web-design/desktop/bg-pattern-intro-web.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+}
+
+.wrapper h1 {
+  font-size: var(--font-size-heading-1);
+  line-height: var(--line-height-heading-1);
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: 400;
+  text-align: center;
+  max-width: 390px;
+}

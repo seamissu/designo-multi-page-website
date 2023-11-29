@@ -1,0 +1,42 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+.wrapper {
+  grid-area: main;
+  position: relative;
+
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-bottom: 380px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+
+  background-color: var(--white);
+  background-image: url('/shared/desktop/bg-pattern-leaf-upper.svg'),
+    url('/shared/desktop/bg-pattern-leaf-lower.svg');
+  background-repeat: no-repeat;
+  background-position: top 320px left 0px, bottom 74px right 0px;
+
+  @media (max-width: $tablet-and-below) {
+    background-image: revert;
+    background-repeat: revert;
+    background-position: revert;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 384px;
+
+    gap: 120px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 286px;
+
+    gap: 96px;
+  }
+}
