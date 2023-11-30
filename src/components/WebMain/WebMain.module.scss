@@ -46,3 +46,16 @@ $mobile-and-below: 550px;
   grid-template-rows: repeat(2, 1fr);
   gap: 32px 30px;
 }
+
+.designwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+
+.onlyondesktop {
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+}
