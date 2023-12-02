@@ -3,7 +3,7 @@ import styles from './Card.module.scss';
 
 import Image from 'next/image';
 
-function Card({ src }) {
+function Card({ src, name, intro }) {
   return (
     <article className={styles.wrapper}>
       <Image
@@ -14,10 +14,8 @@ function Card({ src }) {
         height={640}
       />
       <div>
-        <h3>Express</h3>
-        <p>
-          A multi-carrier shipping website for ecommerce businesses
-        </p>
+        <h3>{name}</h3>
+        <p>{intro}</p>
       </div>
     </article>
   );

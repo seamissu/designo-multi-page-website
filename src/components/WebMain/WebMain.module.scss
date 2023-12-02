@@ -45,6 +45,12 @@ $mobile-and-below: 550px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 32px 30px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 32px;
+  }
 }
 
 .designwrapper {
@@ -52,10 +58,35 @@ $mobile-and-below: 550px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 30px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .onlyondesktop {
   @media (max-width: $tablet-and-below) {
     display: none;
+  }
+}
+
+.onlyontablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: block;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
+
+.onlyonmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
   }
 }

@@ -1,6 +1,16 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablet-and-below) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .displaypic {
@@ -10,6 +20,12 @@
   object-position: left top;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+
+  @media (max-width: $tablet-and-below) {
+    // flex: 1 1 0;
+    border-top-right-radius: revert;
+    border-bottom-left-radius: 15px;
+  }
 }
 
 .wrapper div {
@@ -21,6 +37,20 @@
   padding: 32px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+
+  &:hover {
+    background-color: var(--peach);
+    & > h3,
+    & > p {
+      color: var(--white);
+    }
+  }
+
+  @media (max-width: $tablet-and-below) {
+    // flex: 1 1 0;
+    border-bottom-left-radius: revert;
+    border-top-right-radius: 15px;
+  }
 }
 
 .wrapper h3 {
