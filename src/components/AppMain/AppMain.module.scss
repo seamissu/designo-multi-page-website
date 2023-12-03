@@ -1,0 +1,98 @@
+.wrapper {
+}
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+.wrapper {
+  grid-area: main;
+  position: relative;
+
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-bottom: 380px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+
+  background-color: var(--white);
+  background-image: url('/shared/desktop/bg-pattern-leaf-upper.svg');
+  background-repeat: no-repeat;
+  background-position: top 126px left 0px;
+
+  @media (max-width: $tablet-and-below) {
+    background-image: revert;
+    background-repeat: revert;
+    background-position: revert;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 384px;
+
+    gap: 120px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 286px;
+
+    gap: 96px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 32px 30px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 32px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    gap: 40px;
+  }
+}
+
+.designwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.onlyondesktop {
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+}
+
+.onlyontablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: block;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
+
+.onlyonmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+  }
+}

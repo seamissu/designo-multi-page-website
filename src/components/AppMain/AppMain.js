@@ -1,69 +1,59 @@
 import React from 'react';
-import styles from './WebMain.module.scss';
+import styles from './AppMain.module.scss';
 
 import DesignHero from '../DesignHero';
 import Card from '../Card';
 import SuperLink from '../SuperLink';
 
-function WebMain() {
+function AppMain() {
   return (
     <main className={styles.wrapper}>
+      {' '}
       <DesignHero
-        type={`Web`}
-        description={`We build websites that serve as powerful marketing tools and
-        bring memorable brand experiences.`}
+        type={`App`}
+        description={`Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.`}
       />
       <section className={styles.cards}>
         <Card
-          src={'/web-design/desktop/image-express.jpg'}
-          name={'Express'}
+          src={'/app-design/desktop/image-airfilter.jpg'}
+          name={'Airfilter'}
           intro={
-            'A multi-carrier shipping website for ecommerce businesses'
+            'Solving the problem of poor indoor air quality by filtering the air'
           }
         />
         <Card
-          src={'/web-design/desktop/image-transfer.jpg'}
-          name={'Transfer'}
+          src={'/app-design/desktop/image-eyecam.jpg'}
+          name={'Eyecam'}
           intro={
-            'Site for low-cost money transfers and sending money within seconds'
+            'Product that lets you edit your favorite photos and videos at any time'
           }
         />
         <Card
-          src={'/web-design/desktop/image-photon.jpg'}
-          name={'Photon'}
+          src={'/app-design/desktop/image-faceit.jpg'}
+          name={'Faceit'}
           intro={
-            'A state-of-the-art music player with high-resolution audio and DSP effects'
+            'Get to meet your favorite internet superstar with the faceit app'
           }
         />
         <Card
-          src={'/web-design/desktop/image-builder.jpg'}
-          name={'Builder'}
+          src={'/app-design/desktop/image-todo.jpg'}
+          name={'Todo'}
           intro={
-            'Connects users with local contractors based on their location'
+            'A todo app that features cloud sync with light and dark mode'
           }
         />
         <Card
-          src={'/web-design/desktop/image-blogr.jpg'}
-          name={'Blogr'}
-          intro={
-            'Blogr is a platform for creating an online blog or publication'
-          }
-        />
-        <Card
-          src={'/web-design/desktop/image-camp.jpg'}
-          name={'Camp'}
-          intro={
-            'Get expert training in coding, data, design, and digital marketing'
-          }
+          src={'/app-design/desktop/image-loopstudios.jpg'}
+          name={'Loopstudios'}
+          intro={'A VR experience app made for Loopstudios'}
         />
       </section>
-
       <section className={styles.designwrapper}>
         <SuperLink
           className={styles.onlyondesktop}
-          type={'App'}
+          type={'Web'}
           height={308}
-          bgImageUrl={'/home/desktop/image-app-design.jpg'}
+          bgImageUrl={'/home/desktop/image-web-design-small.jpg'}
           linkURL={'/'}
         />
         <SuperLink
@@ -75,9 +65,9 @@ function WebMain() {
         />
         <SuperLink
           className={styles.onlyontablet}
-          type={'App'}
+          type={'Web'}
           height={200}
-          bgImageUrl={'/home/tablet/image-app-design.jpg'}
+          bgImageUrl={'/home/tablet/image-web-design.jpg'}
           linkURL={'/'}
         />
         <SuperLink
@@ -89,9 +79,9 @@ function WebMain() {
         />
         <SuperLink
           className={styles.onlyonmobile}
-          type={'App'}
+          type={'Web'}
           height={250}
-          bgImageUrl={'/home/mobile/image-app-design.jpg'}
+          bgImageUrl={'/home/mobile/image-web-design.jpg'}
           linkURL={'/'}
         />
         <SuperLink
@@ -106,4 +96,4 @@ function WebMain() {
   );
 }
 
-export default WebMain;
+export default AppMain;
