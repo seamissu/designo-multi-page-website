@@ -8,7 +8,6 @@ import SuperLink from '../SuperLink';
 function AppMain() {
   return (
     <main className={styles.wrapper}>
-      {' '}
       <DesignHero
         type={`App`}
         description={`Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.`}

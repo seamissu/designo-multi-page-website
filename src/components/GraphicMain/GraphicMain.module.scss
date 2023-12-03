@@ -43,12 +43,12 @@ $mobile-and-below: 550px;
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   gap: 32px 30px;
 
   @media (max-width: $tablet-and-below) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 32px;
   }
 
