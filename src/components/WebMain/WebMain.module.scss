@@ -51,6 +51,10 @@ $mobile-and-below: 550px;
     grid-template-rows: repeat(6, 1fr);
     gap: 32px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    gap: 40px;
+  }
 }
 
 .designwrapper {

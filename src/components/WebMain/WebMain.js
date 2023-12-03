@@ -73,28 +73,28 @@ function WebMain() {
           className={styles.onlyontablet}
           type={'App'}
           height={200}
-          bgImageUrl={'/home/desktop/image-app-design.jpg'}
+          bgImageUrl={'/home/tablet/image-app-design.jpg'}
           linkURL={'/'}
         />
         <SuperLink
           className={styles.onlyontablet}
           type={'Graphic'}
           height={200}
-          bgImageUrl={'/home/desktop/image-graphic-design.jpg'}
+          bgImageUrl={'/home/tablet/image-graphic-design.jpg'}
           linkURL={'/'}
         />
         <SuperLink
           className={styles.onlyonmobile}
           type={'App'}
           height={250}
-          bgImageUrl={'/home/desktop/image-app-design.jpg'}
+          bgImageUrl={'/home/mobile/image-app-design.jpg'}
           linkURL={'/'}
         />
         <SuperLink
           className={styles.onlyonmobile}
           type={'Graphic'}
           height={250}
-          bgImageUrl={'/home/desktop/image-graphic-design.jpg'}
+          bgImageUrl={'/home/mobile/image-graphic-design.jpg'}
           linkURL={'/'}
         />
       </section>

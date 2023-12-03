@@ -1,3 +1,7 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   height: 252px;
   width: 100%;
@@ -15,6 +19,18 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
+
+  @media (max-width: $mobile-and-below) {
+    height: 319px;
+    margin-left: -24px;
+    margin-right: -24px;
+    width: revert;
+    border-radius: revert;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    background-position: bottom 25px right -20px;
+  }
 }
 
 .wrapper h1 {
@@ -22,6 +38,11 @@
   line-height: var(--line-height-heading-1);
   font-weight: 500;
   text-align: center;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .wrapper p {
@@ -30,4 +51,9 @@
   font-weight: 400;
   text-align: center;
   max-width: 390px;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
