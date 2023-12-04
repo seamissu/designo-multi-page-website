@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import AppMain from '@/components/AppMain';
 import Footer from '@/components/Footer';
 
-function Home() {
+function Page() {
   return (
     <div className={styles.wrapper}>
       <Header />
@@ -18,4 +18,4 @@ export const metadata = {
   title: 'App Design - DESIGNO',
 };
 
-export default Home;
+export default Page;

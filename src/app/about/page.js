@@ -1,21 +1,21 @@
 import styles from './page.module.scss';
 
 import Header from '@/components/Header';
-import GraphicMain from '@/components/GraphicMain';
+import AboutMain from '@/components/AboutMain';
 import Footer from '@/components/Footer';
 
 function Page() {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <GraphicMain />
+      <AboutMain />
       <Footer />
     </div>
   );
 }
 
 export const metadata = {
-  title: 'Graphic Design - DESIGNO',
+  title: 'About - DESIGNO',
 };
 
 export default Page;
