@@ -28,6 +28,14 @@ $mobile-and-below: 550px;
 
     gap: 120px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 310px;
+
+    gap: 0px;
+  }
 }
 
 .aboutus {
@@ -67,6 +75,16 @@ $mobile-and-below: 550px;
 
     background-position: bottom 100px left -120px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding: 80px 24px;
+
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    background-image: url('/about/mobile/bg-pattern-hero-about-mobile.svg');
+    background-position: top -135px right 0px;
+  }
 }
 
 .aboutuswords h1 {
@@ -77,6 +95,11 @@ $mobile-and-below: 550px;
   @media (max-width: $tablet-and-below) {
     text-align: center;
   }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .aboutuswords p {
@@ -86,6 +109,11 @@ $mobile-and-below: 550px;
 
   @media (max-width: $tablet-and-below) {
     text-align: center;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 
@@ -117,6 +145,18 @@ $mobile-and-below: 550px;
 
   @media (max-width: $mobile-and-below) {
     display: none;
+  }
+}
+
+.aboutusimgmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+    width: 100%;
+
+    grid-area: img;
+    object-fit: cover;
   }
 }
 
@@ -162,6 +202,18 @@ $mobile-and-below: 550px;
   }
 }
 
+.talentimgmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+    width: 100%;
+
+    grid-area: img;
+    object-fit: cover;
+  }
+}
+
 .talentwords {
   grid-area: words;
 
@@ -188,6 +240,15 @@ $mobile-and-below: 550px;
 
     background-position: bottom 45px right 10px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding: 80px 24px;
+
+    background-position: top 0px left 0px;
+
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 }
 
 .talentwords h2 {
@@ -198,6 +259,11 @@ $mobile-and-below: 550px;
 
   @media (max-width: $tablet-and-below) {
     text-align: center;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
@@ -210,6 +276,11 @@ $mobile-and-below: 550px;
   @media (max-width: $tablet-and-below) {
     text-align: center;
   }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .countrywrapper {
@@ -221,6 +292,13 @@ $mobile-and-below: 550px;
     flex-direction: column;
     justify-content: revert;
     gap: 80px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    gap: 48px;
   }
 }
 
@@ -308,6 +386,15 @@ $mobile-and-below: 550px;
     background-image: url('/about/desktop/bg-pattern-world-class-talent.svg');
     background-position: bottom 45px right 10px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding: 80px 24px 104px 24px;
+
+    background-position: top 0px left 0px;
+
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 }
 
 .realdealwords h2 {
@@ -319,6 +406,11 @@ $mobile-and-below: 550px;
   @media (max-width: $tablet-and-below) {
     text-align: center;
   }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .realdealwords p {
@@ -329,6 +421,11 @@ $mobile-and-below: 550px;
 
   @media (max-width: $tablet-and-below) {
     text-align: center;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 
@@ -361,5 +458,17 @@ $mobile-and-below: 550px;
 
   @media (max-width: $mobile-and-below) {
     display: none;
+  }
+}
+
+.realdealimgmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+    width: 100%;
+
+    grid-area: img;
+    object-fit: cover;
   }
 }

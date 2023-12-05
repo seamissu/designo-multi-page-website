@@ -37,6 +37,13 @@ function AboutMain() {
           width={689}
           height={320}
         />
+        <Image
+          className={styles.aboutusimgmobile}
+          alt=""
+          src="/about/mobile/image-about-hero.jpg"
+          width={375}
+          height={320}
+        />
       </section>
       <section className={styles.talent}>
         <Image
@@ -51,6 +58,13 @@ function AboutMain() {
           alt=""
           src="/about/tablet/image-world-class-talent.jpg"
           width={689}
+          height={320}
+        />
+        <Image
+          className={styles.talentimgmobile}
+          alt=""
+          src="/about/mobile/image-world-class-talent.jpg"
+          width={375}
           height={320}
         />
         <div className={styles.talentwords}>
@@ -136,6 +150,13 @@ function AboutMain() {
           src="/about/tablet/image-real-deal.jpg"
           alt=""
           width={689}
+          height={320}
+        />
+        <Image
+          className={styles.realdealimgmobile}
+          src="/about/mobile/image-real-deal.jpg"
+          alt=""
+          width={375}
           height={320}
         />
       </section>
