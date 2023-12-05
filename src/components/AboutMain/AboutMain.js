@@ -30,6 +30,13 @@ function AboutMain() {
           width={476}
           height={480}
         />
+        <Image
+          className={styles.aboutusimgtablet}
+          alt=""
+          src="/about/tablet/image-about-hero.jpg"
+          width={689}
+          height={320}
+        />
       </section>
       <section className={styles.talent}>
         <Image
@@ -38,6 +45,13 @@ function AboutMain() {
           src="/about/desktop/image-world-class-talent.jpg"
           width={476}
           height={640}
+        />
+        <Image
+          className={styles.talentimgtablet}
+          alt=""
+          src="/about/tablet/image-world-class-talent.jpg"
+          width={689}
+          height={320}
         />
         <div className={styles.talentwords}>
           <h2>World-class talent</h2>
@@ -92,6 +106,38 @@ function AboutMain() {
             </Button>
           </div>
         </article>
+      </section>
+      <section className={styles.realdeal}>
+        <div className={styles.realdealwords}>
+          <h2>The real deal</h2>
+          <p>
+            As strategic partners in our clients’ businesses, we are
+            ready to take on any challenge as our own. Solving real
+            problems require empathy and collaboration, and we strive
+            to bring a fresh perspective to every opportunity. We make
+            design and technology more accessible and give you tools
+            to measure success.
+          </p>
+          <p>
+            We are visual storytellers in appealing and captivating
+            ways. By combining business and marketing strategies, we
+            inspire audiences to take action and drive real results.
+          </p>
+        </div>
+        <Image
+          className={styles.realdealimg}
+          src="/about/desktop/image-real-deal.jpg"
+          alt=""
+          width={476}
+          height={640}
+        />
+        <Image
+          className={styles.realdealimgtablet}
+          src="/about/tablet/image-real-deal.jpg"
+          alt=""
+          width={689}
+          height={320}
+        />
       </section>
     </main>
   );

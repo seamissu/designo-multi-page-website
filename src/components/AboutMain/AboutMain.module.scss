@@ -1,3 +1,7 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   padding-left: 165px;
   padding-right: 165px;
@@ -6,11 +10,35 @@
   display: flex;
   flex-direction: column;
   gap: 160px;
+
+  background-color: var(--white);
+  background-image: url('/shared/desktop/bg-pattern-leaf-upper.svg'),
+    url('/shared/desktop/bg-pattern-leaf-upper.svg');
+  background-repeat: no-repeat;
+  background-position: top 320px left 0px, bottom 768px right -396px;
+
+  @media (max-width: $tablet-and-below) {
+    background-image: revert;
+    background-repeat: revert;
+    background-position: revert;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 384px;
+
+    gap: 120px;
+  }
 }
 
 .aboutus {
   display: grid;
   grid-template-areas: 'words img';
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-areas:
+      'img'
+      'words';
+  }
 }
 
 .aboutuswords {
@@ -30,18 +58,35 @@
 
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+
+  @media (max-width: $tablet-and-below) {
+    padding: 64px 58px;
+
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+
+    background-position: bottom 100px left -120px;
+  }
 }
 
 .aboutuswords h1 {
   font-size: var(--font-size-heading-1);
   line-height: var(--line-height-heading-1);
   font-weight: 500;
+
+  @media (max-width: $tablet-and-below) {
+    text-align: center;
+  }
 }
 
 .aboutuswords p {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   font-weight: 400;
+
+  @media (max-width: $tablet-and-below) {
+    text-align: center;
+  }
 }
 
 .aboutusimg {
@@ -51,28 +96,69 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 
-  max-width: revert;
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+}
 
-  @media (max-width: 1250px) {
-    max-width: 100%;
+.aboutusimgtablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: block;
+    width: 100%;
+
+    grid-area: img;
+    object-fit: cover;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
   }
 }
 
 .talent {
   display: grid;
   grid-template-areas: 'img words';
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-areas:
+      'img'
+      'words';
+  }
 }
 
 .talentimg {
   grid-area: img;
   object-fit: cover;
-  max-width: revert;
 
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 
-  @media (max-width: 1250px) {
-    max-width: 100%;
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+}
+
+.talentimgtablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: block;
+    width: 100%;
+
+    grid-area: img;
+    object-fit: cover;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
   }
 }
 
@@ -93,6 +179,15 @@
   background-image: url('/about/desktop/bg-pattern-world-class-talent.svg');
   background-repeat: no-repeat;
   background-position: bottom 0px left -146px;
+
+  @media (max-width: $tablet-and-below) {
+    padding: 68px 58px;
+
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+
+    background-position: bottom 45px right 10px;
+  }
 }
 
 .talentwords h2 {
@@ -100,6 +195,10 @@
   line-height: var(--line-height-heading-2);
   font-weight: 500;
   color: var(--peach);
+
+  @media (max-width: $tablet-and-below) {
+    text-align: center;
+  }
 }
 
 .talent p {
@@ -107,12 +206,22 @@
   line-height: var(--line-height-body);
   font-weight: 400;
   color: var(--dark-gray);
+
+  @media (max-width: $tablet-and-below) {
+    text-align: center;
+  }
 }
 
 .countrywrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: $tablet-and-below) {
+    flex-direction: column;
+    justify-content: revert;
+    gap: 80px;
+  }
 }
 
 .articlewrapper {
@@ -159,4 +268,98 @@
   color: var(--white);
   width: 152px;
   height: 56px;
+}
+
+.realdeal {
+  display: grid;
+  grid-template-areas: 'words img';
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-areas:
+      'img'
+      'words';
+  }
+}
+
+.realdealwords {
+  grid-area: words;
+
+  padding-left: 95px;
+  padding-right: 95px;
+
+  display: grid;
+  place-content: center;
+  gap: 24px;
+
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  background-color: hsl(14deg 76% 97%);
+  background-image: url('/about/desktop/bg-pattern-real-deal.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+
+  @media (max-width: $tablet-and-below) {
+    padding: 68px 58px;
+
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+
+    background-image: url('/about/desktop/bg-pattern-world-class-talent.svg');
+    background-position: bottom 45px right 10px;
+  }
+}
+
+.realdealwords h2 {
+  font-size: var(--font-size-heading-2);
+  line-height: var(--line-height-heading-2);
+  font-weight: 500;
+  color: var(--peach);
+
+  @media (max-width: $tablet-and-below) {
+    text-align: center;
+  }
+}
+
+.realdealwords p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: 400;
+  color: var(--dark-gray);
+
+  @media (max-width: $tablet-and-below) {
+    text-align: center;
+  }
+}
+
+.realdealimg {
+  grid-area: img;
+
+  object-fit: cover;
+
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+}
+
+.realdealimgtablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: block;
+    width: 100%;
+
+    grid-area: img;
+    object-fit: cover;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
 }
