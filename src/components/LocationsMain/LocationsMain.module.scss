@@ -1,0 +1,309 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+.wrapper {
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-bottom: 380px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 384px;
+
+    gap: 120px;
+  }
+}
+
+.canada {
+  display: grid;
+  grid-template-areas: 'details map';
+  grid-template-columns: 1fr 375px;
+  gap: 30px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-areas:
+      'map'
+      'details';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.canadadetails {
+  grid-area: details;
+
+  background-color: hsl(14deg 76% 97%);
+  background-image: url('/locations/desktop/bg-pattern-map.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+
+  padding-left: 95px;
+  padding-top: 88px;
+  padding-bottom: 88px;
+
+  border-radius: 15px;
+
+  display: grid;
+  grid-template-areas:
+    'name name'
+    'address contact';
+  gap: 24px 30px;
+}
+
+.canadadetails h2 {
+  grid-area: name;
+  color: var(--peach);
+  font-size: var(--font-size-heading-2);
+  line-height: var(--line-height-heading-2);
+  font-weight: 500;
+}
+
+.canadadetails > div:first-of-type {
+  grid-area: address;
+}
+
+.canadadetails > div:last-of-type {
+  grid-area: contact;
+}
+
+.canadadetails p {
+  color: var(--dark-gray);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.canadadetails > div > p:first-of-type {
+  font-weight: 700;
+}
+
+.canadadetails > div > p:not(:first-of-type) {
+  font-weight: 400;
+}
+
+.canadamap {
+  grid-area: map;
+  object-fit: cover;
+  border-radius: 15px;
+
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+  }
+}
+
+.canadamaptablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: block;
+    grid-area: map;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
+
+.australia {
+  display: grid;
+  grid-template-areas: 'map details';
+  grid-template-columns: 375px 1fr;
+  gap: 30px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-areas:
+      'map'
+      'details';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.australiamap {
+  grid-area: map;
+  object-fit: cover;
+  border-radius: 15px;
+
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+  }
+}
+
+.australiamaptablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: block;
+    grid-area: map;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
+
+.australiadetails {
+  grid-area: details;
+
+  background-color: hsl(14deg 76% 97%);
+  background-image: url('/locations/desktop/bg-pattern-map.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+
+  padding-left: 95px;
+  padding-top: 88px;
+  padding-bottom: 88px;
+
+  border-radius: 15px;
+
+  display: grid;
+  grid-template-areas:
+    'name name'
+    'address contact';
+  gap: 24px 30px;
+}
+
+.australiadetails h2 {
+  grid-area: name;
+  color: var(--peach);
+  font-size: var(--font-size-heading-2);
+  line-height: var(--line-height-heading-2);
+  font-weight: 500;
+}
+
+.australiadetails > div:first-of-type {
+  grid-area: address;
+}
+
+.australiadetails > div:last-of-type {
+  grid-area: contact;
+}
+
+.australiadetails p {
+  color: var(--dark-gray);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.australiadetails > div > p:first-of-type {
+  font-weight: 700;
+}
+
+.australiadetails > div > p:not(:first-of-type) {
+  font-weight: 400;
+}
+
+.uk {
+  display: grid;
+  grid-template-areas: 'details map';
+  grid-template-columns: 1fr 375px;
+  gap: 30px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-areas:
+      'map'
+      'details';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.ukdetails {
+  grid-area: details;
+
+  background-color: hsl(14deg 76% 97%);
+  background-image: url('/locations/desktop/bg-pattern-map.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+
+  padding-left: 95px;
+  padding-top: 88px;
+  padding-bottom: 88px;
+
+  border-radius: 15px;
+
+  display: grid;
+  grid-template-areas:
+    'name name'
+    'address contact';
+  gap: 24px 30px;
+}
+
+.ukdetails h2 {
+  grid-area: name;
+  color: var(--peach);
+  font-size: var(--font-size-heading-2);
+  line-height: var(--line-height-heading-2);
+  font-weight: 500;
+}
+
+.ukdetails > div:first-of-type {
+  grid-area: address;
+}
+
+.ukdetails > div:last-of-type {
+  grid-area: contact;
+}
+
+.ukdetails p {
+  color: var(--dark-gray);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.ukdetails > div > p:first-of-type {
+  font-weight: 700;
+}
+
+.ukdetails > div > p:not(:first-of-type) {
+  font-weight: 400;
+}
+
+.ukmap {
+  grid-area: map;
+  object-fit: cover;
+  border-radius: 15px;
+
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: block;
+  }
+}
+
+.ukmaptablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: block;
+    grid-area: map;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
