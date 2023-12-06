@@ -1,0 +1,39 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+$tablet-background-image: 768px;
+$mobile-background-image: 375px;
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 155px 1fr 321px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-rows: 155px 1fr 337px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    grid-template-rows: 96px 1fr 626px;
+  }
+
+  & > header {
+    border: 2px solid red;
+  }
+
+  & > main {
+    border: 2px solid green;
+  }
+
+  & > footer {
+    border: 2px solid navy;
+  }
+}
