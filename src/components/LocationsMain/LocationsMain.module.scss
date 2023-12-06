@@ -18,6 +18,14 @@ $mobile-and-below: 550px;
 
     gap: 120px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 310px;
+
+    gap: 40px;
+  }
 }
 
 .canada {
@@ -31,7 +39,12 @@ $mobile-and-below: 550px;
       'map'
       'details';
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 326px 1fr;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    grid-template-rows: 320px 395px;
+    gap: 0px;
   }
 }
 
@@ -41,6 +54,7 @@ $mobile-and-below: 550px;
   background-color: hsl(14deg 76% 97%);
   background-image: url('/locations/desktop/bg-pattern-map.svg');
   background-repeat: no-repeat;
+  background-position: cover;
   background-position: bottom 0px left 0px;
 
   padding-left: 95px;
@@ -54,6 +68,21 @@ $mobile-and-below: 550px;
     'name name'
     'address contact';
   gap: 24px 30px;
+
+  @media (max-width: $mobile-and-below) {
+    border-radius: 0px;
+    background-image: url('/locations/mobile/bg-pattern-map.svg');
+    background-position: bottom 0px right 0px;
+    padding-top: 80px;
+    padding-left: 0px;
+
+    grid-template-areas:
+      'name'
+      'address'
+      'contact';
+
+    gap: 24px;
+  }
 }
 
 .canadadetails h2 {
@@ -62,6 +91,12 @@ $mobile-and-below: 550px;
   font-size: var(--font-size-heading-2);
   line-height: var(--line-height-heading-2);
   font-weight: 500;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 .canadadetails > div:first-of-type {
@@ -76,6 +111,12 @@ $mobile-and-below: 550px;
   color: var(--dark-gray);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
 }
 
 .canadadetails > div > p:first-of-type {
@@ -96,7 +137,9 @@ $mobile-and-below: 550px;
   }
 
   @media (max-width: $mobile-and-below) {
+    border-radius: 0px;
     display: block;
+    width: 100%;
   }
 }
 
@@ -127,7 +170,12 @@ $mobile-and-below: 550px;
       'map'
       'details';
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 326px 1fr;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    grid-template-rows: 320px 395px;
+    gap: 0px;
   }
 }
 
@@ -141,7 +189,9 @@ $mobile-and-below: 550px;
   }
 
   @media (max-width: $mobile-and-below) {
+    border-radius: 0px;
     display: block;
+    width: 100%;
   }
 }
 
@@ -166,6 +216,7 @@ $mobile-and-below: 550px;
 
   background-color: hsl(14deg 76% 97%);
   background-image: url('/locations/desktop/bg-pattern-map.svg');
+  background-position: cover;
   background-repeat: no-repeat;
   background-position: bottom 0px left 0px;
 
@@ -180,6 +231,21 @@ $mobile-and-below: 550px;
     'name name'
     'address contact';
   gap: 24px 30px;
+
+  @media (max-width: $mobile-and-below) {
+    border-radius: 0px;
+    background-image: url('/locations/mobile/bg-pattern-map.svg');
+    background-position: bottom 0px right 0px;
+    padding-top: 80px;
+    padding-left: 0px;
+
+    grid-template-areas:
+      'name'
+      'address'
+      'contact';
+
+    gap: 24px;
+  }
 }
 
 .australiadetails h2 {
@@ -188,6 +254,12 @@ $mobile-and-below: 550px;
   font-size: var(--font-size-heading-2);
   line-height: var(--line-height-heading-2);
   font-weight: 500;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 .australiadetails > div:first-of-type {
@@ -202,6 +274,12 @@ $mobile-and-below: 550px;
   color: var(--dark-gray);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
 }
 
 .australiadetails > div > p:first-of-type {
@@ -223,7 +301,12 @@ $mobile-and-below: 550px;
       'map'
       'details';
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 326px 1fr;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    grid-template-rows: 320px 395px;
+    gap: 0px;
   }
 }
 
@@ -233,6 +316,7 @@ $mobile-and-below: 550px;
   background-color: hsl(14deg 76% 97%);
   background-image: url('/locations/desktop/bg-pattern-map.svg');
   background-repeat: no-repeat;
+  background-position: cover;
   background-position: bottom 0px left 0px;
 
   padding-left: 95px;
@@ -246,6 +330,21 @@ $mobile-and-below: 550px;
     'name name'
     'address contact';
   gap: 24px 30px;
+
+  @media (max-width: $mobile-and-below) {
+    border-radius: 0px;
+    background-image: url('/locations/mobile/bg-pattern-map.svg');
+    background-position: bottom 0px right 0px;
+    padding-top: 80px;
+    padding-left: 0px;
+
+    grid-template-areas:
+      'name'
+      'address'
+      'contact';
+
+    gap: 24px;
+  }
 }
 
 .ukdetails h2 {
@@ -254,6 +353,12 @@ $mobile-and-below: 550px;
   font-size: var(--font-size-heading-2);
   line-height: var(--line-height-heading-2);
   font-weight: 500;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 .ukdetails > div:first-of-type {
@@ -268,6 +373,12 @@ $mobile-and-below: 550px;
   color: var(--dark-gray);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
 }
 
 .ukdetails > div > p:first-of-type {
@@ -288,7 +399,9 @@ $mobile-and-below: 550px;
   }
 
   @media (max-width: $mobile-and-below) {
+    border-radius: 0px;
     display: block;
+    width: 100%;
   }
 }
 
