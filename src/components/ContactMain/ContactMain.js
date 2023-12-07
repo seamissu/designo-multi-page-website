@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './ContactMain.module.scss';
 
+import Button from '../Button';
+
 function ContactMain() {
   return (
     <main className={styles.wrapper}>
@@ -14,7 +16,25 @@ function ContactMain() {
             that’s relatable to your users, drop us a line.
           </p>
         </div>
-        <form></form>
+        <form className={styles.contactform}>
+          <input type="text" required={true} placeholder="Name" />
+          <input
+            type="email"
+            required={true}
+            placeholder="Email Address"
+          />
+          <input type="text" required={true} placeholder="Phone" />
+          {/* <input
+            type="text"
+            required={true}
+            placeholder="Your Message"
+          /> */}
+          <textarea
+            required={true}
+            placeholder="Your Message"
+          ></textarea>
+          <Button className={styles.whitebutton}>Submit</Button>
+        </form>
       </section>
     </main>
   );

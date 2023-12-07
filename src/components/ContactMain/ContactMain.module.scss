@@ -5,4 +5,90 @@
 
 .contactus {
   background-color: var(--peach);
+  padding-left: 95px;
+  padding-right: 95px;
+
+  border-radius: 15px;
+
+  display: grid;
+  grid-template-areas: 'words form';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 96px;
+
+  align-items: center;
+
+  height: 480px;
+}
+
+.contactus > div {
+  color: var(--white);
+  display: grid;
+  place-content: center;
+  gap: 32px;
+
+  grid-area: words;
+}
+
+.contactus h1 {
+  font-size: var(--font-size-heading-1);
+  line-height: var(--line-height-heading-1);
+  font-weight: 500;
+}
+
+.contactus p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: 400;
+}
+
+.contactform {
+  grid-area: form;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contactform > input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--white);
+  background-color: var(--peach);
+}
+
+.contactform > textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--white);
+  background-color: var(--peach);
+
+  margin-top: -20px;
+}
+
+.contactform > input::placeholder {
+  color: hsl(0deg 0% 100% / 0.5);
+  text-indent: 1em;
+}
+
+.contactform > textarea::placeholder {
+  color: hsl(0deg 0% 100% / 0.5);
+  text-indent: 1em;
+}
+
+.contactform > input {
+  line-height: 2;
+}
+
+.contactform > textarea {
+  line-height: 3.5;
+}
+
+.whitebutton {
+  align-self: flex-end;
+
+  background-color: var(--white);
+  color: var(--dark-gray);
+  width: 152px;
+  height: 56px;
 }
