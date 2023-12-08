@@ -30,7 +30,7 @@ Users should be able to:
 
   ![](./screenshot1.png)
 
-- Tablet - Web Design
+- Desktop - App Design Page
 
   ![](./screenshot2.png)
 
@@ -42,7 +42,7 @@ Users should be able to:
 
   ![](./screenshot4.png)
 
-- Mobile - Graphic Design
+- Mobile - Graphic Design Page
 
   ![](./screenshot5.png)
 
