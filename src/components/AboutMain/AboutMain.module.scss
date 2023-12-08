@@ -288,7 +288,13 @@ $mobile-and-below: 550px;
   flex-direction: row;
   justify-content: space-between;
 
+  padding-left: 75px;
+  padding-right: 75px;
+
   @media (max-width: $tablet-and-below) {
+    padding-left: revert;
+    padding-right: revert;
+
     flex-direction: column;
     justify-content: revert;
     gap: 80px;

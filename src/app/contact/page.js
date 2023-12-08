@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import ContactMain from '@/components/ContactMain';
 import ContactFooter from '@/components/ContactFooter';
 
-function Home() {
+function Page() {
   return (
     <div className={styles.wrapper}>
       <Header />
@@ -14,4 +14,8 @@ function Home() {
   );
 }
 
-export default Home;
+export const metadata = {
+  title: 'Contact - DESIGNO',
+};
+
+export default Page;

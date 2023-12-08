@@ -1,10 +1,37 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   padding-left: 165px;
   padding-right: 165px;
+  padding-bottom: 160px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 120px;
+
+    gap: 120px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 120px;
+  }
 }
 
 .contactus {
   background-color: var(--peach);
+  background-image: url('/contact/desktop/bg-pattern-hero-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+
   padding-left: 95px;
   padding-right: 95px;
 
@@ -15,10 +42,41 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 96px;
-
   align-items: center;
 
   height: 480px;
+
+  @media (max-width: $tablet-and-below) {
+    background-position: bottom 154px left -122px;
+
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    grid-template-areas:
+      'words'
+      'form';
+
+    grid-template-columns: 1fr;
+    grid-template-rows: revert;
+    gap: 40px;
+
+    height: revert;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    background-image: url('/contact/mobile/bg-pattern-hero-contact-mobile.svg');
+    background-position: top 0px left -90px;
+
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    border-radius: 0px;
+    gap: 48px;
+  }
 }
 
 .contactus > div {
@@ -28,18 +86,34 @@
   gap: 32px;
 
   grid-area: words;
+
+  @media (max-width: $mobile-and-below) {
+    gap: 24px;
+  }
 }
 
 .contactus h1 {
   font-size: var(--font-size-heading-1);
   line-height: var(--line-height-heading-1);
   font-weight: 500;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 .contactus p {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   font-weight: 400;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
 }
 
 .contactform {
@@ -54,34 +128,56 @@
   border: none;
   outline: none;
   border-bottom: 1px solid var(--white);
-  background-color: var(--peach);
+  background-color: transparent;
+  line-height: 2;
+
+  text-indent: 1em;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--white);
+
+  &:hover,
+  &:focus {
+    border-bottom: 3px solid var(--white);
+    cursor: pointer;
+  }
 }
 
 .contactform > textarea {
   border: none;
   outline: none;
   border-bottom: 1px solid var(--white);
-  background-color: var(--peach);
+  background-color: transparent;
+  line-height: 3.5;
 
-  margin-top: -20px;
+  text-indent: 1em;
+
+  margin-top: -10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--white);
+
+  &:hover,
+  &:focus {
+    border-bottom: 3px solid var(--white);
+    cursor: pointer;
+  }
 }
 
 .contactform > input::placeholder {
   color: hsl(0deg 0% 100% / 0.5);
   text-indent: 1em;
+
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .contactform > textarea::placeholder {
   color: hsl(0deg 0% 100% / 0.5);
   text-indent: 1em;
-}
 
-.contactform > input {
-  line-height: 2;
-}
-
-.contactform > textarea {
-  line-height: 3.5;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .whitebutton {
@@ -89,6 +185,79 @@
 
   background-color: var(--white);
   color: var(--dark-gray);
+  width: 152px;
+  height: 56px;
+
+  @media (max-width: $mobile-and-below) {
+    align-self: center;
+    margin-top: 16px;
+  }
+}
+
+.countrywrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-left: 75px;
+  padding-right: 75px;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: revert;
+    padding-right: revert;
+
+    flex-direction: column;
+    justify-content: revert;
+    gap: 80px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    gap: 48px;
+  }
+}
+
+.articlewrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.countrywrapper > article:nth-of-type(1) > div:first-of-type {
+  background-image: url('/shared/desktop/bg-pattern-small-circle-up.svg');
+}
+
+.countrywrapper > article:nth-of-type(2) > div:first-of-type {
+  background-image: url('/shared/desktop/bg-pattern-small-circle-left.svg');
+}
+
+.countrywrapper > article:nth-of-type(3) > div:first-of-type {
+  background-image: url('/shared/desktop/bg-pattern-small-circle-down.svg');
+}
+
+.countrywrapper > article:nth-of-type(3) > div:last-of-type > button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articlewrapper > div:first-of-type {
+  background-repeat: no-repeat;
+}
+
+.articlewrapper h3 {
+  font-size: var(--font-size-heading-3);
+  line-height: var(--line-height-heading-3);
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+.peachbutton {
+  background-color: var(--peach);
+  color: var(--white);
   width: 152px;
   height: 56px;
 }
