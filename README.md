@@ -64,7 +64,7 @@ Users should be able to:
 
 ### What I learned
 
-While working through this project, I wrapped and created some reusable UI components like Card and SuperLink, making the codebase more readable and maintanable.
+While working through this project, I wrapped and created some reusable UI components like Card and SuperLink, making the codebase more readable and maintainable.
 
 ```js
 function SuperLink({
