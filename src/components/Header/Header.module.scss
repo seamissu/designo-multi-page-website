@@ -23,6 +23,11 @@ $mobile-and-below: 550px;
   }
 }
 
+.wrapper > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navwrapper {
   display: flex;
   justify-content: space-between;
@@ -94,7 +99,7 @@ $mobile-and-below: 550px;
   gap: 32px;
 }
 
-.content a {
+.content > nav a {
   text-decoration: none;
   color: var(--white);
 
@@ -115,4 +120,9 @@ $mobile-and-below: 550px;
     padding-right: 24px;
     background-color: var(--white);
   }
+}
+
+.modalheader > a {
+  text-decoration: none;
+  color: inherit;
 }
