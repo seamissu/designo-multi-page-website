@@ -64,42 +64,42 @@ function WebMain() {
           type={'App'}
           height={308}
           bgImageUrl={'/home/desktop/image-app-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
         <SuperLink
           className={styles.onlyondesktop}
           type={'Graphic'}
           height={308}
           bgImageUrl={'/home/desktop/image-graphic-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/graphicdesign'}
         />
         <SuperLink
           className={styles.onlyontablet}
           type={'App'}
           height={200}
           bgImageUrl={'/home/tablet/image-app-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
         <SuperLink
           className={styles.onlyontablet}
           type={'Graphic'}
           height={200}
           bgImageUrl={'/home/tablet/image-graphic-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/graphicdesign'}
         />
         <SuperLink
           className={styles.onlyonmobile}
           type={'App'}
           height={250}
           bgImageUrl={'/home/mobile/image-app-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
         <SuperLink
           className={styles.onlyonmobile}
           type={'Graphic'}
           height={250}
           bgImageUrl={'/home/mobile/image-graphic-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/graphicdesign'}
         />
       </section>
     </main>

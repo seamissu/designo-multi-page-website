@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './GetInTouch.module.scss';
 
+import Link from 'next/link';
+
 import Button from '../Button';
 
 function GetInTouch() {
@@ -13,7 +15,9 @@ function GetInTouch() {
           find out how our expertise can help your business grow.
         </p>
       </div>
-      <Button className={styles.button}>Get in touch</Button>
+      <Button className={styles.button}>
+        <Link href="/contact">Get in touch</Link>
+      </Button>
     </div>
   );
 }

@@ -21,17 +21,17 @@ function ContactFooter() {
           height={27}
         />
         <div className={styles.linkwrapper}>
-          <Link href="/">Our Company</Link>
-          <Link href="/">Locations</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/about">Our Company</Link>
+          <Link href="/locations">Locations</Link>
+          <Link href="/contact">Contact</Link>
         </div>
       </div>
 
       <div className={styles.gridwrapper}>
         <div className={styles.mobilelinkwrapper}>
-          <Link href="/">Our Company</Link>
-          <Link href="/">Locations</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/about">Our Company</Link>
+          <Link href="/locations">Locations</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <div>
           <p>Designo Central Office</p>

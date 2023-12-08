@@ -29,7 +29,7 @@ function Main() {
           height={640}
           bgImageUrl={'/home/desktop/image-web-design-large.jpg'}
           className={styles.weblink}
-          linkURL={'/'}
+          linkURL={'/webdesign'}
         />
 
         <SuperLink
@@ -37,7 +37,7 @@ function Main() {
           height={308}
           bgImageUrl={'/home/desktop/image-app-design.jpg'}
           className={styles.applink}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
 
         <SuperLink
@@ -45,7 +45,7 @@ function Main() {
           height={308}
           bgImageUrl={'/home/desktop/image-graphic-design.jpg'}
           className={styles.graphiclink}
-          linkURL={'/'}
+          linkURL={'/graphicdesign'}
         />
 
         <SuperLink
@@ -53,7 +53,7 @@ function Main() {
           height={200}
           bgImageUrl={'/home/tablet/image-web-design.jpg'}
           className={styles.webtablet}
-          linkURL={'/'}
+          linkURL={'/webdesign'}
         />
 
         <SuperLink
@@ -61,7 +61,7 @@ function Main() {
           height={200}
           bgImageUrl={'/home/tablet/image-app-design.jpg'}
           className={styles.apptablet}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
 
         <SuperLink
@@ -69,7 +69,7 @@ function Main() {
           height={200}
           bgImageUrl={'/home/tablet/image-graphic-design.jpg'}
           className={styles.graphictablet}
-          linkURL={'/'}
+          linkURL={'/graphicdesign'}
         />
 
         <SuperLink
@@ -77,7 +77,7 @@ function Main() {
           height={250}
           bgImageUrl={'/home/mobile/image-web-design.jpg'}
           className={styles.webmobile}
-          linkURL={'/'}
+          linkURL={'/webdesign'}
         />
 
         <SuperLink
@@ -85,7 +85,7 @@ function Main() {
           height={250}
           bgImageUrl={'/home/mobile/image-app-design.jpg'}
           className={styles.appmobile}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
 
         <SuperLink
@@ -93,7 +93,7 @@ function Main() {
           height={250}
           bgImageUrl={'/home/mobile/image-graphic-design.jpg'}
           className={styles.graphicmobile}
-          linkURL={'/'}
+          linkURL={'/graphicdesign'}
         />
       </section>
 

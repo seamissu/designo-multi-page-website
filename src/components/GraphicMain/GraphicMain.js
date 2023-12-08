@@ -39,42 +39,42 @@ function GraphicMain() {
           type={'App'}
           height={308}
           bgImageUrl={'/home/desktop/image-app-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
         <SuperLink
           className={styles.onlyondesktop}
           type={'Web'}
           height={308}
           bgImageUrl={'/home/desktop/image-web-design-small.jpg'}
-          linkURL={'/'}
+          linkURL={'/webdesign'}
         />
         <SuperLink
           className={styles.onlyontablet}
           type={'App'}
           height={200}
           bgImageUrl={'/home/tablet/image-app-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
         <SuperLink
           className={styles.onlyontablet}
           type={'Web'}
           height={200}
           bgImageUrl={'/home/tablet/image-web-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/webdesign'}
         />
         <SuperLink
           className={styles.onlyonmobile}
           type={'App'}
           height={250}
           bgImageUrl={'/home/mobile/image-app-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/appdesign'}
         />
         <SuperLink
           className={styles.onlyonmobile}
           type={'Web'}
           height={250}
           bgImageUrl={'/home/mobile/image-web-design.jpg'}
-          linkURL={'/'}
+          linkURL={'/webdesign'}
         />
       </section>
     </main>

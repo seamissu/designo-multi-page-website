@@ -354,6 +354,11 @@ $mobile-and-below: 550px;
   height: 56px;
 }
 
+.peachbutton a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .realdeal {
   display: grid;
   grid-template-areas: 'words img';

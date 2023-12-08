@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './AboutMain.module.scss';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import Button from '../Button';
 
 import CanadaIllustration from '../CanadaIllustration';
@@ -94,7 +95,7 @@ function AboutMain() {
           <div>
             <h3>Canada</h3>
             <Button className={styles.peachbutton}>
-              See location
+              <Link href="/locations">See location</Link>
             </Button>
           </div>
         </article>
@@ -105,7 +106,7 @@ function AboutMain() {
           <div>
             <h3>Australia</h3>
             <Button className={styles.peachbutton}>
-              See location
+              <Link href="/locations">See location</Link>
             </Button>
           </div>
         </article>
@@ -116,7 +117,7 @@ function AboutMain() {
           <div>
             <h3>United Kingdom</h3>
             <Button className={styles.peachbutton}>
-              See location
+              <Link href="/locations">See location</Link>
             </Button>
           </div>
         </article>
