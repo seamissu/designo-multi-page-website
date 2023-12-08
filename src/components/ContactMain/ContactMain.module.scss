@@ -11,7 +11,15 @@ $mobile-and-below: 550px;
   flex-direction: column;
   gap: 160px;
 
+  background-image: url('/shared/desktop/bg-pattern-leaf-upper.svg');
+  background-repeat: no-repeat;
+  background-position: bottom -160px right 0px;
+
   @media (max-width: $tablet-and-below) {
+    background-image: revert;
+    background-repeat: revert;
+    background-position: revert;
+
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 120px;

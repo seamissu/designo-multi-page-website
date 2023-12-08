@@ -1,5 +1,9 @@
+'use client';
+
 import React from 'react';
 import styles from './Header.module.scss';
+
+import * as Dialog from '@radix-ui/react-dialog';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,13 +21,49 @@ function Header() {
         height={27}
       />
       <nav className={styles.navwrapper}>
-        <Link href="/">Our Company</Link>
-        <Link href="/">Locations</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/about">Our Company</Link>
+        <Link href="/locations">Locations</Link>
+        <Link href="/contact">Contact</Link>
       </nav>
-      <button className={styles.button}>
-        <HamburgerIcon />
-      </button>
+
+      <Dialog.Root>
+        <Dialog.Trigger asChild>
+          <button className={styles.button}>
+            <HamburgerIcon />
+          </button>
+        </Dialog.Trigger>
+        <Dialog.Portal>
+          <Dialog.Overlay className={styles.overlay} />
+          <Dialog.Content className={styles.content}>
+            <section className={styles.modalheader}>
+              <Image
+                src="/shared/desktop/logo-dark.png"
+                alt="website logo"
+                width={196}
+                height={27}
+              />
+              <Dialog.Close asChild>
+                <button className={styles.button}>
+                  <CloseIcon />
+                </button>
+              </Dialog.Close>
+            </section>
+            <nav>
+              <ul>
+                <li>
+                  <Link href="/about">Our Company</Link>
+                </li>
+                <li>
+                  <Link href="/locations">Locations</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
+              </ul>
+            </nav>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
     </header>
   );
 }
